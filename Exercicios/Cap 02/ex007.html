@@ -9,7 +9,12 @@
 <body>
     <script>
         function pulaLinha(){
-            document.write('<hr>');
+            document.write('<br><hr><br>')
+        }
+
+        function mostra(frase){
+            document.write('<big>' + frase + '<big>' + '<hr>');
+            pulaLinha();
         }
 
         var ano = 2023;
@@ -19,16 +24,11 @@
         var total = eu + adriano + paulo;
         var media = total/3;
 
-        document.write('Eu nasci em: ' + (ano - eu) + ".");
-        pulaLinha();
-        document.write('Adriano nasceu em:' + (ano - adriano) + '.');
-        pulaLinha();
-        document.write('Paulo nasceu em: ' + (ano - paulo) + '.');
-        pulaLinha();
-        document.write('Nossas idades somam: ' + total + '.');
-        pulaLinha();
-        document.write('A média de nossas idades é: ' + Math.round(media) + '.');
-        pulaLinha();
+        mostra('Eu nasci em: ' + (ano - eu) + ".");
+        mostra('Adriano nasceu em:' + (ano - adriano) + '.');
+        mostra('Paulo nasceu em: ' + (ano - paulo) + '.');
+        mostra('Nossas idades somam: ' + total + '.');
+        mostra('A média de nossas idades é: ' + Math.round(media) + '.');
     </script>
 </body>
 </html>
