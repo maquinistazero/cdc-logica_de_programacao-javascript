@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 02 - ex 006</title>
+</head>
+
+<body>
+    <h3>Álcool ou Gasolina?</h3>
+
+    <script>
+        var tanque = 40;
+
+        var caminhoComGasolina = 480;
+        var consumoDeGasolina = caminhoComGasolina/tanque;
+        document.write('O consumo de gasolina foi de ' + consumoDeGasolina.toFixed(2) + ' litros por km/h.<br>');
+
+        var caminhoComaAlcool = 300;
+        var consumoDeAlcool = caminhoComaAlcool/tanque;
+        document.write('O consumo de álcool foi de ' + consumoDeAlcool.toFixed(2) + ' litros por km/h.<br>');
+
+        var precoDaGasolina = 5.35;
+        var precoPorKilometroGasolina = precoDaGasolina/consumoDeGasolina;
+        document.write('O preço por kilometro de gasolina é ' + precoPorKilometroGasolina.toFixed(2) + '$. <br>')
+
+        var precoDoAlcool = 4.44;
+        var precoPorKilometroAlcool = precoDoAlcool/consumoDeAlcool;
+        document.write('O preço por kilometro de álcool é ' + precoPorKilometroAlcool.toFixed(2) + '$. <br>')
+
+
+
+    </script>
+</body>
+</html>

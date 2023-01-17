@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 02 - ex 007</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<hr>');
+        }
+
+        var ano = 2023;
+        var eu = 28;
+        var adriano = 37;
+        var paulo = 47;
+        var total = eu + adriano + paulo;
+        var media = total/3;
+
+        document.write('Eu nasci em: ' + (ano - eu) + ".");
+        pulaLinha();
+        document.write('Adriano nasceu em:' + (ano - adriano) + '.');
+        pulaLinha();
+        document.write('Paulo nasceu em: ' + (ano - paulo) + '.');
+        pulaLinha();
+        document.write('Nossas idades somam: ' + total + '.');
+        pulaLinha();
+        document.write('A média de nossas idades é: ' + Math.round(media) + '.');
+        pulaLinha();
+    </script>
+</body>
+</html>
