@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 03 - ex 002</title>
+</head>
+
+<body>
+
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        function calculaIMC(peso, altura){
+            var imc = (peso / (altura * altura)).toFixed(2);
+            return imc;
+            //mostra('O IMC é: ' + Math.round(imc));
+        }
+
+        var meuPeso = 95;
+        var minhaAltura = 1.63;
+        var meuIMC = calculaIMC(meuPeso, minhaAltura);
+        mostra('O meu IMC é ' + meuIMC + '.  Eu estou a ' + Math.round(meuIMC-18.5) + 
+        '<br> pontos acima do limite da magreza <br> e a ' + (meuIMC - 35).toFixed(2) + 
+        ' pontos da obesidade severa.');
+
+        var pesoDoPrimo = 83;
+        var alturaDoPrimo = 1.76;
+        var imcDoPrimo = calculaIMC(pesoDoPrimo, alturaDoPrimo);
+        mostra('O IMC do meu primo é ' + imcDoPrimo + ' e ele está a ' + Math.round(imcDoPrimo-18.5) + 
+        '<br> pontos acima do limite da magreza e a' + (imcDoPrimo - 35).toFixed(2) + 
+        '<br> pontos da obesidade severa.');
+    </script>
+
+</body>
+</html>

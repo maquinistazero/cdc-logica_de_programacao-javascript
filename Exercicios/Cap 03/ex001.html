@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 03 - ex 001</title>
+</head>
+
+<body>
+
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        var peso = 95;
+        var altura = 1.63;
+        var imc = peso / (altura * altura);
+        mostra('Meu peso é: ' + imc.toFixed(1) + '.');
+
+        var pesoDoPrimo = 83;
+        var alturaDoPrimo = 1.76;
+        var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo)
+        mostra('O IMC dp primo é: ' + imcDoPrimo.toFixed(1) + '.')
+    </script>
+
+</body>
+</html>
