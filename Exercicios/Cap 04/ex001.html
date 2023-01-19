@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 04 - ex 001</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        function calculoDePontos(vitorias, empates, derrotas){
+            return ((vitorias* 3) + empates) - derrotas; 
+        }
+
+        var vitoriasCDC = parseInt(prompt('Quantos jogos o CDC FC venceu?'));
+        var empatesCDC = parseInt(prompt('Quantos jogos o CDC FC empatou?'));
+        var derrotasCDC = parseInt(prompt('Quantos jogos o CDC FC perdeu?'));
+        var pontosCDC = calculoDePontos(vitoriasCDC, empatesCDC, derrotasCDC);
+        mostra('Pontos do CDC FC: ' + pontosCDC);
+
+        var vitoriasLV = parseInt(prompt('Quantos jogos o LV FC venceu?'));
+        var empatesLV = parseInt(prompt('Quantos jogos o LV FC empatou?'));
+        var derrotasLV = parseInt(prompt('Quantos jogos o LV FC perdeu?'));
+        var pontosLV = calculoDePontos(vitoriasLV, empatesLV, derrotasLV);
+        mostra('Pontos do LV FC: ' + pontosLV);
+
+        if(pontosCDC>pontosLV){
+            mostra('CDC FC está vencendo!');
+        }
+
+        if(pontosCDC<pontosLV){
+            mostra('CDC FC está perdendo!');
+        }
+
+        if(pontosCDC == pontosLV){
+            mostra('Os times estão empatados!');
+        }
+       
+    </script>
+</body>
+</html>

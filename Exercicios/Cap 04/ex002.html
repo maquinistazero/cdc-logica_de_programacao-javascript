@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 04 - ex 002</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        function calculaIMC(altura, peso){
+            return (peso/(altura*altura)).toFixed(1);
+            
+        }
+
+        var altura = prompt('Qual sua altura?')
+        var peso = prompt('E qual o seu peso?')
+        var imc = calculaIMC(altura, peso)
+        mostra('Seu IMC é: ' + imc);
+
+        if(imc < 18.5){
+            mostra('Você está ABAIXO do peso.');
+        }
+
+        if(imc > 35){
+            mostra('Você está ACIMA do peso.');
+        }
+
+        if(imc >= 18.5 && imc <= 35){
+            mostra('Ok, você está no peso ideal');
+        }
+
+    </script>
+</body>
+</html>
