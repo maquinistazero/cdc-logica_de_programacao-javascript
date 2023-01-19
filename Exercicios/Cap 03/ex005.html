@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 03 - ex 005</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        function calculaDiasDeVida(idade){
+            var dias = idade * 365;
+            return dias;
+        }
+
+        function calculaBatimentos(dias){
+            var batimentos = dias * 24 * 60 * 80;
+            return batimentos;
+        }
+
+        var idade = 1;
+        var dias = calculaDiasDeVida(idade);
+        var batimentos = calculaBatimentos(dias)
+        mostra(dias);
+        mostra(batimentos);
+                
+    </script>
+</body>
+</html>

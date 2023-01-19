@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 03 - ex 004</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function mostra(frase){
+            document.write(frase + '<hr>');
+            pulaLinha();
+        }
+
+        function calculaIMC(peso, altura){
+            var imc = (peso / (altura * altura)).toFixed(2);
+            return imc;
+            //mostra('O IMC é: ' + Math.round(imc));
+        }
+        var nome = prompt('Olá, qual o seu nome?')
+        var alturaDoUsuario = prompt("Bom dia, " + nome +  "! Qual é a sua altura?");
+        var pesoDoUsuario = prompt('E o qual é o seu peso?');
+
+        var imcDoUsuario = calculaIMC(pesoDoUsuario, alturaDoUsuario);
+        mostra(nome + ', seu IMC é ' + imcDoUsuario);
+    </script>
+</body>
+</html>
